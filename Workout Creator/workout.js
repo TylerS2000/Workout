@@ -1,4 +1,5 @@
 function lift(){
+  
 let workout = document.getElementById("input"); 
 let usein = workout.value;
 let workarr = [];
@@ -94,9 +95,14 @@ for(let element of workarr){para.innerHTML+= "<br />" + "<br />" +
  element}
 }
 
+function clears(){
+    let para = document.getElementById("para");   
+    para.innerHTML="";
+}
 
 //select random element from any array
 function Randomarray(x){
    let sel = Math.floor(Math.random()*(x.length))
 return sel
 }
+
